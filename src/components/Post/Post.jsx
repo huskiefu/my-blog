@@ -12,7 +12,7 @@ const Post = () => {
   const [post, setPost] = useState("");
   
   async function retrievePost(id){
-    const url = "http://localhost:5000/posts/" + id;
+    const url = "https://nameless-hollows-00237.herokuapp.com/posts/" + id;
     const {data} = await Axios.get(url);
     setPost(data);
   }
@@ -22,7 +22,7 @@ const Post = () => {
   },[]);
 
   function deletePost(id){
-    const url = "http://localhost:5000/posts/" + id;
+    const url = "https://nameless-hollows-00237.herokuapp.com/posts/" + id;
     Axios.delete(url)
     .then(function (response) {
       console.log(response);

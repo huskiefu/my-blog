@@ -15,12 +15,12 @@ function App() {
   const [posts, setPosts] = useState([]);
 
   async function retrievePosts() {
-    const {data} = await Axios.get("http://localhost:5000");
+    const {data} = await Axios.get("https://nameless-hollows-00237.herokuapp.com/");
     setPosts(data);
   }
 
   function submitPost(inputTitle, inputContent){
-    Axios.post('http://localhost:5000', {
+    Axios.post('https://nameless-hollows-00237.herokuapp.com/', {
       title : inputTitle,
       content : inputContent
     })
