@@ -1,0 +1,38 @@
+.input-container {
+    padding-top: 2rem;
+    padding-left : 1rem;
+    margin-left : 0;
+    margin-top: 0;
+    height : 100%;
+}
+
+.input-form{
+    display:flex;
+    flex: column;
+}
+
+.postcard {
+    padding-top: 1rem;
+    padding-bottom : 1rem;
+    padding-left : 1rem;
+    margin-left : 0;
+    margin-top: 0;
+    width : 70%;
+    height : auto;
+    margin-bottom : 3%;
+}
+
+.title-input{
+    display: block;
+    width : 70%;
+    border-radius : 4px;
+    border : 1px solid grey;
+}
+
+.content-input{
+   display : block;
+   width: 70%;
+   border-radius : 4px;
+   border : 1px solid grey;
+   resize : none;
+}

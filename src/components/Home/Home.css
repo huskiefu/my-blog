@@ -1,0 +1,19 @@
+.home-container {
+    padding-top: 2.5rem;
+    padding-left : 1rem;
+    margin-left : 0;
+    margin-top: 0;
+    padding-bottom : 3%;
+    height : auto;
+}
+
+.postcard {
+    padding-top: 1rem;
+    padding-bottom : 1rem;
+    padding-left : 1rem;
+    margin-left : 0;
+    margin-top: 0;
+    width : 70%;
+    height : auto;
+    margin-bottom : 3%;
+}
