@@ -12,7 +12,7 @@ const Home = ({posts}) => {
                 <Card className='postcard'>
                 <Card.Body>
                 <Card.Title className = "title">{post.title}</Card.Title>
-                <Card.Text  className = "content">{post.content.substring(0,400) + "..."}</Card.Text>
+                {(post.content.length > 400) ? <Card.Text  className = "content">{post.content.substring(0,400) + "..."}</Card.Text> : <Card.Text className = "content">{post.content}</Card.Text>}
                 <Button variant = "primary" as = {Link} to = {`/posts/${post._id}`}>Read More</Button>
                 </Card.Body>
                 </Card>
